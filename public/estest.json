@@ -1,0 +1,69 @@
+
+[
+{
+"id": 1,
+"estate_title": "The Grand Villa",
+"segment_name": "Luxury Villa",
+"description": "An exquisite villa with modern architecture and a panoramic ocean view, located in a secluded area.",
+"price": "$4,500,000",
+"status": "sale",
+"area": "5000 sq ft",
+"location": "Malibu, California",
+"facilities": ["living room", "swimming pool", "kitchen", "home theater", "gym"],
+"image_url": "../src/assets/crd_img_6.jpg",
+"view_property": "View Property"
+},
+{
+"id": 2,
+"estate_title": "Skyline Penthouse",
+"segment_name": "Penthouse",
+"description": "A breathtaking penthouse in the heart of the city, with a 360-degree skyline view and premium facilities.",
+"price": "$3,200,000",
+"status": "rent",
+"area": "3200 sq ft",
+"location": "Manhattan, New York",
+"facilities": ["living room", "swimming pool", "kitchen", "private elevator", "rooftop terrace"],
+"image_url": "../src/assets/crd_img_2.jpg",
+"view_property": "View Property"
+},
+{
+"id": 3,
+"estate_title": "Countryside Manor",
+"segment_name": "Estate",
+"description": "A beautiful countryside manor with lush gardens, ideal for those who seek tranquility and nature.",
+"price": "$2,800,000",
+"status": "sale",
+"area": "7500 sq ft",
+"location": "Cotswolds, UK",
+"facilities": ["living room", "swimming pool", "kitchen", "garden", "wine cellar"],
+"image_url": "../src/assets/crd_img_3.jpg",
+"view_property": "View Property"
+},
+{
+"id": 4,
+"estate_title": "Beachfront Escape",
+"segment_name": "Luxury Villa",
+"description": "A luxurious beachfront villa with private access to the ocean and stunning sunset views.",
+"price": "$5,000,000",
+"status": "sale",
+"area": "4500 sq ft",
+"location": "Maui, Hawaii",
+"facilities": ["living room", "swimming pool", "kitchen", "private beach", "spa"],
+"image_url": "../src/assets/crd_img_4.jpg",
+"view_property": "View Property"
+},
+{
+"id": 5,
+"estate_title": "Urban Luxury Condo",
+"segment_name": "Condominium",
+"description": "A contemporary luxury condo with high-end amenities, perfect for urban living in style.",
+"price": "$1,500,000",
+"status": "rent",
+"area": "2200 sq ft",
+"location": "Los Angeles, California",
+"facilities": ["living room", "swimming pool", "kitchen", "gym", "business center"],
+"image_url": "../src/assets/crd_img_5.jpg",
+"view_property": "View Property"
+}
+]
+
