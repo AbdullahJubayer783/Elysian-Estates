@@ -14,6 +14,7 @@ const Home = () => {
         <>
         <div className='max-w-6xl m-auto'>
         <Navbar></Navbar>
+        
         <Banner></Banner>
         {/* <OurLocation></OurLocation> */}
         <div className='mt-16'>

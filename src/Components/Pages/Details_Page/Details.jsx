@@ -2,6 +2,8 @@
 import React from 'react';
 import Navbar from '../../Shered/Navbar';
 import Footer from '../../Shered/Footer/Footer';
+import Details_Img_slider from './Details_img_slider';
+
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
@@ -14,13 +16,16 @@ const Details = () => {
     const {area , description , estate_title , facilities , image_url , location , price , segment_name , status , view_property} = estate;
     return (
         <>
+                        
+        
             <div className='max-w-6xl m-auto text-white'>
                 <Navbar></Navbar>
                 <div className='flex flex-wrap gap-6 text-center items-center justify-center mt-4'>
-                    <div className='w-[48%] overflow-hidden'>
-                        <img src={`${image_url}`} className='w-full hover:scale-125 transition-transform duration-500' alt="" srcset="" />
+                    <div className='w-[48%]'>
+                        <Details_Img_slider></Details_Img_slider>
                     </div>
-                    <div className='w-[48%] text-left space-y-4'>
+                    
+                    <div className='w-[40%] text-left space-y-4'>
                         <h3 className='text-3xl'>{estate_title}</h3>
                         <h4 className='text-xl'>Segment Name: {segment_name}</h4>
                         <p className='text-xs'>{description}</p>
