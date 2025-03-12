@@ -52,10 +52,10 @@ const Login = () => {
     }
     return (
         <>
-        <div className='max-w-6xl m-auto'>
+        <div className=' bg-white m-auto'>
             <Navbar></Navbar>
-            <h3 className='text-white text-3xl font-bold text-center my-9'>Welcome Back</h3>
-            <form className='w-[40%] m-auto space-y-4 text-white' onSubmit={handleSubmit(OnSubmit)}>
+            <h3 className='text-[#333333] text-3xl font-bold text-center my-9'>Welcome Back</h3>
+            <form className='w-[40%] m-auto space-y-4 text-[#333333]' onSubmit={handleSubmit(OnSubmit)}>
                 <label className="input input-bordered flex items-center gap-2">
                 <input type="text" className="grow" {...register("userEmail",{required:{value:true,message:"Email field was required"},pattern:{value:/[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/,message:"@ , . was required to create an email."}})} placeholder="Email: daisy@site.com" />
                 </label>
@@ -66,7 +66,7 @@ const Login = () => {
                 {errors?.userEmail && <p className='text-red-700 text-sm font-bold'>{errors?.userEmail?.message}</p>}
                 {errors?.userPass && <p className='text-red-700 text-sm font-bold'>{errors?.userPass?.message}</p>}
             </form>
-            <div className='my-6 flex justify-center gap-3 text-white w-[40%] m-auto'>
+            <div className='my-6 flex justify-center gap-3 text-[#333333] w-[40%] m-auto'>
                 <div className="relative w-full">
                     <div className="absolute bottom-1/2 w-full border-t border-gray-600"></div>
                 </div>
@@ -81,12 +81,12 @@ const Login = () => {
                     <FaGoogle className='text-xl'></FaGoogle>
                     <p className='text-sm font-sans font-bold'>Sign In With Google</p>
                 </div>
-                <div onClick={handelFacebookPopupLogin} className='flex justify-center items-center gap-2 text-white btn btn-outline w-[40%] m-auto p-3 rounded-md mt-4 hover:bg-slate-200'>
+                <div onClick={handelFacebookPopupLogin} className='flex justify-center items-center gap-2 text-[#333333] btn btn-outline w-[40%] m-auto p-3 rounded-md mt-4 hover:bg-slate-200'>
                     <FaFacebook className='text-xl'></FaFacebook>
                     <p className='text-sm font-sans font-bold'>Sign In With Facebook</p>
                 </div>
             </div>
-            <p className='text-white font-sans text-sm text-center mt-4'>New to here? <NavLink state={location?.state? location.state : '/'} to='/signup' className='text-blue-700 font-bold'>Signup</NavLink></p>
+            <p className='text-[#333333] font-sans text-sm text-center mt-4 pb-4'>New to here? <NavLink state={location?.state? location.state : '/'} to='/signup' className='text-blue-700 font-bold'>Signup</NavLink></p>
         </div>
             <Footer></Footer>
        </>

@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 const ErrorPage = () => {
     return (<>
         
-        <div className='text-center mt-8 text-white font-sans space-y-7 h-full'>
+        <div className='text-center mt-8 text-[#333333] font-sans space-y-7 h-full'>
             <h2 className='text-3xl'>Unexpected Application Error!</h2>
             <h5 className='text-2xl font-bold'><span className='text-red-700'>404</span> Page Not Found</h5>
             <Link className='btn btn-success' to='/'>{"<"} Go back to home?</Link>

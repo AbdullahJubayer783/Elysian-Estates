@@ -5,6 +5,8 @@
 @tailwind utilities;
 
 body {
+    background-color: #F0F0F0 !important;
+    color: #333333 !important;
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;

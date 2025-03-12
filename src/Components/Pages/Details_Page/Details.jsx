@@ -3,26 +3,21 @@ import React from 'react';
 import Navbar from '../../Shered/Navbar';
 import Footer from '../../Shered/Footer/Footer';
 import Details_Img_slider from './Details_img_slider';
-
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
-    const {id} = useParams();
-    const estates_xb = useLoaderData();
-    // console.log(estates_xb);
-    // console.log(estates_xb.forEach(es=>console.log(typeof )));
-    let estate = estates_xb.find((es) => es.id === parseInt(id));
-    console.log(estate);
-    const {area , description , estate_title , facilities , image_url , location , price , segment_name , status , view_property} = estate;
+    const estate = useLoaderData();
+    const {area , description , estate_title , facilities , location , price , segment_name , status , images } = estate;
+
     return (
         <>
                         
         
-            <div className='max-w-6xl m-auto text-white'>
+            <div className='m-auto text-[#333333] bg-white'>
                 <Navbar></Navbar>
-                <div className='flex flex-wrap gap-6 text-center items-center justify-center mt-4'>
-                    <div className='w-[48%]'>
-                        <Details_Img_slider></Details_Img_slider>
+                <div className='flex flex-wrap gap-6 pt-10'>
+                    <div className='w-[55%]'>
+                        <Details_Img_slider images={images}></Details_Img_slider>
                     </div>
                     
                     <div className='w-[40%] text-left space-y-4'>
@@ -34,7 +29,6 @@ const Details = () => {
                         <p className='font-serif text-lg'>Location: {location} </p>
                         <p className='font-serif text-lg'>Facilities: {facilities.map(facilitie => <span className='font-bold'>{facilitie},</span>)}</p>
                         <p className=''>Price: <span className='font-bold'>{price}</span> </p>
-
                     </div>
 
                 </div>

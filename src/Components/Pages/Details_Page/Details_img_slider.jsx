@@ -12,24 +12,16 @@ import banner_img_1 from "../../../assets/ee-banner-img-4.avif"
 import banner_img_2 from "../../../assets/ee-bg-1f.jpg"
 import banner_img_3 from "../../../assets/ee-banner-img.jpg"
 
-const Details_Img_slider = () => {
+const Details_Img_slider = ({images}) => {
+  console.log(images[0].id);
     return (
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper h-full w-full rounded-lg" >
-       <SwiperSlide>
-           <div><img src={banner_img_1} className='h-[380px] w-full' /></div>
-       </SwiperSlide>
-      <SwiperSlide>
-        <div><img src={banner_img_1} className='h-[380px] w-full' /></div>
-       </SwiperSlide>
-        <SwiperSlide>
-       <div><img src={banner_img_1} className='h-[380px] w-full' /></div>
-       </SwiperSlide>
+      {
+        images.map(img => <SwiperSlide key={img.id}>
+          <div><img src={img.image} className='h-[440px] w-full' /></div>
+      </SwiperSlide>)
+      }
     </Swiper>
-    //     <div data-aos="fade-up"
-    //  data-aos-anchor-placement="top-bottom">
-    //       
-    //     </div>
-  
     );
 };
 

@@ -77,10 +77,10 @@ const Signin = () => {
     }
     return (
        <>
-        <div className='max-w-6xl m-auto'>
+        <div className='bg-white m-auto'>
             <Navbar></Navbar>
-            <h3 className='text-white text-3xl font-bold text-center my-9'>Sign Up</h3>
-            <form className='w-[40%] m-auto space-y-4 text-white' onSubmit={handleSubmit(OnSubmit)}>
+            <h3 className='text-[#333333] text-3xl font-bold text-center my-9'>Sign Up</h3>
+            <form className='w-[40%] m-auto space-y-4 text-[#333333]' onSubmit={handleSubmit(OnSubmit)}>
                 <label className='font-sans font-bold'>Photo(optional)*</label>
                 <input type="file" {...register("userImage")} className="file-input file-input-bordered w-full  " placeholder='Photo(optional)' />
                 <label className="input input-bordered flex items-center gap-2">
@@ -103,7 +103,7 @@ const Signin = () => {
                 {errors?.userEmail && <p className='text-red-700 text-sm font-bold'>{errors?.userEmail?.message}</p>}
                 {errors?.userPass && <p className='text-red-700 text-sm font-bold'>{errors?.userPass?.message}</p>}
             </form>
-            <div className='my-6 flex justify-center gap-3 text-white w-[40%] m-auto'>
+            <div className='my-6 flex justify-center gap-3 text-[#333333] w-[40%] m-auto'>
                 <div class="relative w-full">
                     <div class="absolute bottom-1/2 w-full border-t border-gray-600"></div>
                 </div>
@@ -119,12 +119,12 @@ const Signin = () => {
                     <p className='text-sm font-sans font-bold'>Sign Up With Google</p>
                 </div>
                 <div onClick={handelFacebookPopupLogin}
-                className='flex justify-center items-center gap-2 text-white btn btn-outline w-[40%] m-auto p-3 rounded-md mt-4 hover:bg-slate-200'>
+                className='flex justify-center items-center gap-2 text-[#333333] btn btn-outline w-[40%] m-auto p-3 rounded-md mt-4 hover:bg-slate-200'>
                     <FaFacebook className='text-xl'></FaFacebook>
                     <p className='text-sm font-sans font-bold'>Sign Up With Facebook</p>
                 </div>
             </div>
-            <p className='text-white font-sans text-sm text-center mt-4'>Already have an account? <NavLink to='/signin' className='text-blue-700 font-bold'>Signin</NavLink></p>
+            <p className='text-[#333333] font-sans text-sm text-center mt-4 pb-4'>Already have an account? <NavLink to='/signin' className='text-blue-700 font-bold'>Signin</NavLink></p>
         </div>
             <Footer></Footer>
        </>

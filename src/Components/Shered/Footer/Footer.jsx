@@ -1,8 +1,8 @@
 import { PiBuildingsDuotone } from "react-icons/pi";
 const Footer = () => {
     return (
-        <div className="bg-gray-900 text-neutral-content">
-            <footer className="footer max-w-6xl m-auto pt-11 mt-16">
+        <div className="text-black bg-white m-auto">
+            <footer className="footer max-w-6xl m-auto pt-20">
             <aside className=''>
                 <PiBuildingsDuotone className="text-4xl"></PiBuildingsDuotone>
                 <p className="text-2xl">
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </nav>
             </footer>
-            <footer className="footer footer-center max-w-6xl m-auto p-4 bg-gray-900 text-neutral-content">
+            <footer className="footer footer-center max-w-6xl m-auto p-4 text-black mt-5">
             <aside>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
             </aside>

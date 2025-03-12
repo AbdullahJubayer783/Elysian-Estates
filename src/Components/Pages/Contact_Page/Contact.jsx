@@ -67,10 +67,11 @@ const Contact = () => {
         }
       };
     
-    return (<div >
-        <div className='max-w-6xl m-auto'>
+    return (<>
+    
+        <div className='bg-white m-auto'>
         <Navbar></Navbar>
-        <div className='ContactForm'>
+        <div className='ContactForm '>
       <div className='container'>
         <div className='row'>
           <div className='col-12 text-center'>
@@ -200,9 +201,9 @@ const Contact = () => {
         </div>
       )}
     </div>
-    </div>
-    <Footer></Footer>
-    </div>
+        </div>
+        <div className='m-auto'><Footer></Footer></div>
+    </>
     );
 };
 
